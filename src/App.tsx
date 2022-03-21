@@ -13,6 +13,7 @@ import './App.css';
 import HomePage from './components/HomePage';
 import SuperHeroes from './components/SuperHeroes';
 import RQSuperHeroes from './components/RQSuperHeroes';
+import RQSuperhero from './components/RQSuperhero';
 
 function App() {
   const queryClient = new QueryClient(); 
@@ -37,6 +38,7 @@ function App() {
           {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
           <Routes>
+            <Route path="/re-superHeroes/:heroId" element={<RQSuperhero />} />
             <Route path="/re-superHeroes" element={<RQSuperHeroes />} />
             <Route path="/superHeroes" element={<SuperHeroes />} />
             <Route path="/" element={<HomePage />} />
@@ -55,3 +57,16 @@ function App() {
 }
 
 export default App;
+
+// you can change something that be default for react-query like that : 
+// const queryClient = new QueryClient({
+//   defaultOptions: {
+//     queries: {
+//       refetchOnWindowFocus: false,
+//       refetchOnmount: false,
+//       refetchOnReconnect: false,
+//       retry: false,
+//       staleTime: 5*60*1000,
+//     },
+//   },
+// });
