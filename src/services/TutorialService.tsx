@@ -34,6 +34,7 @@ const deleteAll = async () => {
     const response = await apiClient.delete<any>("/tutorials");
     return response.data;
 }
+
 const TutorialService = {
     findAll,
     findById,

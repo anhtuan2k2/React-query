@@ -4,7 +4,7 @@ interface Data {
     id: number;
     name: string;
 }
-const SuperHeroes = () => {
+const Test = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [data, setData] = useState<any>([]);
     const [error, setError] = useState<any>();
@@ -30,4 +30,4 @@ const SuperHeroes = () => {
     </></div>;
 };
 
-export default SuperHeroes;
+export default Test;
