@@ -15,4 +15,4 @@
 //  * assignment : combine polling and callbacks use refetchInterval option to pull the api data every three seconds. 
 // check if the number of heroes is 4.stop polling.if it there is an error as well.stop polling
 // hint for assignment : need to maintain a state variable whose initial value is 3000 and state variable will be assigned to refetchInterval configuration,
-// inside the callback function check for response or error and set the value to false,that will stop the polling.
+// inside the callback function check for response or error and set the value to false,that will stop the polling.//
